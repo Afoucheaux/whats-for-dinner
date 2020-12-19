@@ -1,6 +1,6 @@
 // Create variables targetting the relevant DOM elements here.
 var cookPotImg = document.querySelector('#svg-cookpot');
-var cookButton = document.querySelector('.cook');
+var cookButton = document.querySelector('.lets-cook-button');
 var shouldMake = document.querySelector("#you-make");
 var clearButton = document.querySelector("#clear");
 var clearButtonTwo = document.querySelector("#clear-two");
@@ -14,7 +14,10 @@ var yourPick = false;
 cookButton.addEventListener("click", changeToDish);
 clearButton.addEventListener("click", reset);
 clearButtonTwo.addEventListener("click", reset);
+
 // Create your event handlers and other functions here.
+
+
 function unhideDish(element) {
   element.classList.remove('hidden-dish');
 }
