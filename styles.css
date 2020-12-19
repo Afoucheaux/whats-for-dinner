@@ -1,9 +1,8 @@
 
 body {
-  margin-top: 10px;
   background-image: url('./assets/burger-friends.jpg');
   background-size: cover;
-  background-position: center 2px;
+  background-position: center 01;
   font-family: 'Roboto', sans-serif;
   margin: 0;
 }
@@ -12,47 +11,47 @@ body {
   display: flex;
   width: 100%;
   background-color: #0fb9b1;
-  padding: 1px;
 }
 
-h2 {
- padding-left: 30px;
+.title {
+ padding-left: 3%;
 }
 
 .boxContainer{
   display: flex;
   justify-content: center;
-  margin-top: 50px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .boxes {
-  margin: auto;
-  height: 410px;
-  width: 530px;
-  float: left;
+  margin-top: 4%;
+  margin-left: 6%;
+  margin-right:6%;
+  width: 40%;
   background-color: rgba(225, 225, 225, .9);
   opacity: 1;
 }
 
 form {
   display: flex;
-  justify-content: space-around;
+  align-content: center;
+  justify-content: space-between;
   flex-direction: column;
-  margin-left: 50px;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
-h1 {
-  margin-top: 50px;
-  margin-left: 50px;
-  font-size: 28px;
+.title2 {
+  margin-top: 15%;
+  margin-right: 10%;
+  margin-left: 10%;
+  font-size: 2em;
+}
+
+label {
+  font-size: 1.25em;
 }
 
 input {
-  margin-bottom: 30px;
+  margin: 3%;
+  margin-left: 12%;
 }
 
 sup {
@@ -60,20 +59,24 @@ sup {
 }
 
 svg {
-  margin-top: 120px;
-  margin-left: 180px;
-  height: 150px;
-  width:  150px;
+  margin-left: 30%;
+  margin-top: 22%;
+  height: 40%;
+  width: 40%;
 }
 
 button {
   background-color: #0fb9b1;
   border: none;
   border-radius: 5px;
-  padding-left: 45px;
-  padding-right: 45px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-left: 11%;
+  padding-right: 11%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin: 5%;
+  margin-left: 12%;
+  margin-bottom: 5%;
+  font-size: 1em;
 }
 
 #you-make {
@@ -81,7 +84,7 @@ button {
   justify-content: center;
   align-items: center;
   font-style: italic;
-  margin-top: 110px;
+  margin-top: 25%;
 }
 
 #change-dish {
@@ -89,8 +92,8 @@ button {
   margin-top: auto;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
-  margin-left: 40px;
+  font-size: 1.75em;
+  margin: 7%;
 }
 
 #change-meal {
@@ -98,29 +101,27 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 22px;
-  margin-left: 50px;
-  margin-right: 50px;
-
-
+  font-size: 1.25em;
+  margin-left: 7%;
+  margin-right: 7%;
 }
 
 #clear {
-  margin-top: 40px;
-  margin-left: 400px;
+  margin-top: 3%;
+  margin-left: 75%;
   background-color: #95a5a6;
   color: rgba(225, 225, 225, .9);
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 #clear-two {
-  margin-top: 40px;
-  margin-left: 400px;
+  margin-top: 3%;
+  margin-left: 75%;
   background-color: #95a5a6;
   color: rgba(225, 225, 225, .9);
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .hidden-dish {
