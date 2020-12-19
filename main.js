@@ -8,15 +8,24 @@ var dishState = document.querySelector("#dish-state");
 var mainState = document.querySelector("#main-state");
 var wholeMealStatement = document.querySelector("#change-meal");
 var dishStatement = document.querySelector("#change-dish");
+var addRecipe = document.querySelector(".add-recipe-button");
+var footer = document.querySelector("footer");
+var recipeTypeToAdd = document.querySelector("select");
+var addNewButton = document.querySelector("#add-new");
+var yourRecipe = document.querySelector("#your-recipe");
 var yourPick = false;
 
 // Add your event listeners here
 cookButton.addEventListener("click", changeToDish);
 clearButton.addEventListener("click", reset);
 clearButtonTwo.addEventListener("click", reset);
-
+addRecipe.addEventListener("click", openAddRecipe)
+addNewButton.addEventListener("click", saveRecipe)
 // Create your event handlers and other functions here.
 
+function openAddRecipe(){
+  unhideMain(footer);
+}
 
 function unhideDish(element) {
   element.classList.remove('hidden-dish');
@@ -37,6 +46,19 @@ function hideDish(element) {
 
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
+}
+
+function saveRecipe() {
+  event.preventDefault();
+  if (recipeTypeToAdd.value === "type") {
+    return
+  } else if (recipeTypeToAdd.value === "your-side") {
+    sidesList.push(yourRecipe.value);
+  } else if (recipeTypeToAdd.value === "your-main") {
+    mainDishList.push(yourRecipe.value);
+  } else {
+    dessertList.push(recipeTypeToAdd.value);
+  }
 }
 
 function checkRadioButtons() {
