@@ -37,14 +37,19 @@ function getRandomIndex(array) {
 function saveRecipe() {
   event.preventDefault();
   if (recipeTypeToAdd.value === "type") {
+    alert("Please pick a type!");
     return
   } else if (recipeTypeToAdd.value === "your-side") {
     sidesList.push(yourRecipe.value);
   } else if (recipeTypeToAdd.value === "your-main") {
     mainDishList.push(yourRecipe.value);
   } else {
-    dessertList.push(recipeTypeToAdd.value);
+    dessertList.push(yourRecipe.value);
   }
+  unhide(clearButton);
+  unhide(dishState);
+  hide(cookPotImg);
+  dishStatement.innerHTML = `<p id="change-dish">${yourRecipe.value}!</p>`;
 }
 
 function checkRadioButtons() {
