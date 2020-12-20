@@ -5,25 +5,15 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
 }
-/* in nav bar */
 
-.header {
-  display: flex;
-  width: 100%;
-  height: 9%;
-  background-color: #0fb9b1;
-}
-
-.title {
-  font-size: 1.5em;
-  margin: 1.5%;
+button {
+  border: none;
+  border-radius: 5px;
 }
 
 .add-recipe-button {
   margin: auto;
   margin-left: 72%;
-  border-radius: 5px;
-  border: none;
   background-color: rgba(225, 225, 225, .9);
   padding-top: .75%;
   padding-bottom: .75%;
@@ -31,20 +21,24 @@ body {
   padding-right: 1.5%;
 }
 
-/*in the two boxes */
-.boxContainer{
-  display: flex;
-  justify-content: space-evenly;
-
+.lets-cook-button {
+  background-color: #0fb9b1;
+  padding-left: 14%;
+  padding-right: 14%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 10%;
+  margin-top: 4%;
+  margin-left: 1%;
+  font-size: .8em;
 }
 
-.boxes {
-  margin-top: 3.25%;
-  margin-left: 6%;
-  margin-right:6%;
-  width: 38%;
-  background-color: rgba(225, 225, 225, .9);
-  opacity: 1;
+#add-new-button {
+  background-color: #0fb9b1;
+  padding-top: .5%;
+  padding-bottom: .5%;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 .choice-buttons{
@@ -55,7 +49,43 @@ body {
   font-size: 1.25em;
   margin: 2.75%;
   margin-left: 10%;
+}
 
+.clear {
+  margin: 5%;
+  margin-left: 75%;
+  background-color: #95a5a6;
+  color: rgba(225, 225, 225, .9);
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  background-color: #0fb9b1;
+}
+
+.title {
+  font-size: 1.5em;
+  margin: 1.5%;
+}
+
+.boxContainer{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.boxes {
+  margin-top: 3.25%;
+  margin-left: 6%;
+  margin-right:6%;
+  width: 38%;
+  background-color: rgba(225, 225, 225, .9);
+  opacity: 1;
 }
 
 .title2 {
@@ -80,20 +110,6 @@ svg {
   width: 40%;
 }
 
-.lets-cook-button {
-  background-color: #0fb9b1;
-  border: none;
-  border-radius: 5px;
-  padding-left: 14%;
-  padding-right: 14%;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  margin-bottom: 10%;
-  margin-top: 4%;
-  margin-left: 1%;
-  font-size: .8em;
-}
-
 #you-make {
   display: flex;
   justify-content: center;
@@ -104,15 +120,12 @@ svg {
 
 #change-dish {
   display: flex;
-  margin-top: auto;
   justify-content: center;
   align-items: center;
   font-size: 1.75em;
-  margin: 7%;
 }
 
 #change-meal {
-  margin-top: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,35 +133,8 @@ svg {
   margin: 7%
 }
 
-#clear {
-  margin: 5%;
-  margin-left: 75%;
-  border-radius: 5px;
-  border: none;
-  background-color: #95a5a6;
-  color: rgba(225, 225, 225, .9);
-  padding-top: 2%;
-  padding-bottom: 2%;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-#clear-two {
-  margin: 5%;
-  margin-left: 75%;
-  border-radius: 5px;
-  border: none;
-  background-color: #95a5a6;
-  color: rgba(225, 225, 225, .9);
-  padding-top: 2%;
-  padding-bottom: 2%;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-/* footer/add-own */
 footer{
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 10%;
@@ -173,32 +159,6 @@ select {
   margin-left: 0;
 }
 
-/* utility items */
-.hidden-dish {
+.hidden {
   display: none;
 }
-
-.hidden-main {
-  display: none;
-}
-
-#add-new {
-  border-radius: 5px;
-  border: none;
-  background-color: #0fb9b1;
-  padding-top: .5%;
-  padding-bottom: .5%;
-  padding-left: 1%;
-  padding-right: 1%;
-}
-
-/* font-family: 'Roboto', sans-serif;
-
-COLORS
-teal - #0fb9b1;
-frosted white - rgba(225, 225, 225, .9);
-grey - #95a5a6;
-red - #ee5253
-
-*/
-<
